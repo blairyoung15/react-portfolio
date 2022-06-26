@@ -4,12 +4,12 @@ main {
   padding: 50px 30px;
 }
 :root {
-  --primary: #8c54ff;
+  --primary: #fdf196;
   --secondary: #f3a847;
   --tertiary: #b12704;
-  --light: #fafafa;
-  --dark: #000000;
-  --darker: #111111;
+  --light: #c5fcda;
+  --blue: #98e5ec;
+  --darker: #67bac6;
   --error: rgb(228, 46, 1);
   --spacing-one: calc(1rem * 0.5);
   --spacing-two: calc(1rem);
@@ -32,9 +32,10 @@ body {
   line-height: 1.5;
   font-size: 18px;
   letter-spacing: 0.1em;
-  background: var(--dark);
+  background: var(--blue);
   color: var(--light);
-  font-family: 'Poiret One', cursive;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 100;
 }
 
 h1,
@@ -43,8 +44,9 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 100;
+  text-align: center;
   margin: 5px 0;
   line-height: 1.25;
 }
@@ -89,7 +91,7 @@ a:hover {
 }
 
 header {
-  background: var(--dark);
+  background: var(--blue);
 }
 
 header a {
@@ -132,7 +134,7 @@ form {
 input {
   font-size: 1rem;
   padding: 0.25rem;
-  border: 1px solid var(--dark);
+  border: 1px solid var(--blue);
   outline: none;
   border-radius: 3px;
   transition: box-shadow 0.2s;
