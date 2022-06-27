@@ -6,14 +6,16 @@ function About() {
   return (
       
     <section className="my-5 flex-row" >
-        <img src={headshot} className="my-2" style={{ width: "10%" }} alt="headshot" />
-      <h1 id="about">h e l l o .</h1>
-      <br></br>
-      <h3>I'm Blair Young</h3>
+      <h1 id="about">h e l l o . I'm Blair Young.</h1>
       <div className="my-2">
       
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum turpis sed ex condimentum molestie. Mauris condimentum lectus ut ornare dignissim. Mauris faucibus urna mi, ac feugiat metus aliquam maximus. Proin aliquam justo nec diam vulputate vestibulum. Aenean sollicitudin nulla at nisi ornare, nec suscipit massa eleifend. Morbi tristique justo vel turpis sollicitudin, et tristique velit convallis. In hac habitasse platea dictumst. Phasellus mattis nunc sed orci consequat laoreet. Praesent id nisl nibh. Curabitur imperdiet ultricies mollis. In hac habitasse platea dictumst.
+       Junior Full Stack developer with a background in building and designing websites that cater to a user's experience. Proficient in the following technologies: javascript, NodeJs, CSS, HTML, MongoDB, MySQL, ReactJS.
+       I also have a background in designing with Adobe photoshop, InDesign and Illustrator.
+      </p>
+      <img src={headshot} className="my-2" style={{ width: "8%" }} alt="headshot" />
+      <p>
+       I have a background working in professional sports, engineering and a passion for working with people with severe physical impairments. All of these paths have allowed me to get a greater insight into the world of technology and its advantages to our world.
       </p>
     
       </div>
