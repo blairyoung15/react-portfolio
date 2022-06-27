@@ -1,56 +1,42 @@
 import React from "react";
-import { capitalizeFirstLetter } from "../../utils/helpers";
 
 function Nav() {
-  const  categories = [
-    { name: 'commercial', description: 'Photos of grocery stores, food trucks, and other commercial projects' },
-    { name: 'portraits', description: 'Portraits of people in my life' },
-    { name: 'food', description: 'Delicious delicacies' },
-    { name: 'landscape', description: 'Fields, farmhouses, waterfalls, and the beauty of nature' }
-  ];
 
-  const handleClick = () => {
-    console.log("click handled")
-  }
+  const handleClick = (item) => {
+    console.log(item);
+    return item;
+  };
 
   return (
-    <header data-testid="header" className="flex-row px-1">
-      <h2>
-        <a href="/">
-          <span role="img" aria-label="camera"> 📸</span> Blair Young
-        </a>
-      </h2>
+      <header>
       <nav>
         <ul className="flex-row">
+        <li className="mx-2">
+            <a data-testid="link" href="/">
+              Home
+            </a>
+          </li>
           <li className="mx-2">
-            <a href="#about" onClick={() => handleClick()}>
+            <a data-testid="about" href="#about" onClick={() => handleClick("About")}>
               About me
             </a>
           </li>
-          <li className={"mx-2"}>
-            <span onClick={() => handleClick()}>
+          <li className="mx-2">
+            <a  data-testid="portfolio" href="#portfolio" onClick={() => handleClick('Portfolio')}>
               Portfolio
-            </span>
+            </a>
           </li>
-          <li className={"mx-2"}>
-            <span onClick={() => handleClick()}>
+          <li className="mx-2">
+            <a data-testid="contact" href="#contact-form" onClick={() => handleClick('Contact')}>
               Contact
-            </span>
+            </a>
           </li>
-          <li className={"mx-2"}>
-            <span onClick={() => handleClick()}>
+          <li className="mx-2">
+            <a data-testid="resume" href="#resume" onClick={() => handleClick('Resume')}>
               Resume
-            </span>
+            </a>
           </li>
-          {
-            categories.map((category) => (
-              <li className="mx-1" key={category.name} >
-                <span onClick={() => { handleClick(); }}>
-                 {capitalizeFirstLetter(category.name)}
-                </span>
-              </li>
-            ))
-          }
+       
         </ul>
       </nav>
     </header>

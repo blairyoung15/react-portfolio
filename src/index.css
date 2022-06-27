@@ -7,7 +7,7 @@ main {
   --primary: #fdf196;
   --secondary: #f3a847;
   --tertiary: #b12704;
-  --light: #c5fcda;
+  --light: #7eaf91;
   --blue: #98e5ec;
   --darker: #67bac6;
   --error: rgb(228, 46, 1);
@@ -28,7 +28,6 @@ body {
 body {
   margin: 0;
   padding: 0;
-  font-weight: 600;
   line-height: 1.5;
   font-size: 18px;
   letter-spacing: 0.1em;
@@ -98,6 +97,10 @@ header a {
   color: var(--light);
 }
 
+img {
+  border-radius: 100px;
+}
+
 button {
   font-size: 1rem;
   text-decoration: none;
@@ -160,7 +163,7 @@ nav li {
 textarea {
   width: 600px;
   height: 120px;
-  border: 3px solid #cccccc;
+  border: 3px solid var(--blue);
   padding: 5px;
 }
 
@@ -174,10 +177,12 @@ textarea {
 .flex-row {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .space-between {
   justify-content: space-between;
+  align-items: center;
 }
 
 .flex-end {
@@ -267,6 +272,12 @@ textarea {
   margin-bottom: 25px;
 }
 
+.icon {
+  width: 5%;
+  margin: auto;
+}
+
+
 button {
   background: var(--primary);
   border: 0;
@@ -289,5 +300,6 @@ a {
 }
 
 .navActive {
-  color: var(--secondary);
+  color: var(--primary);
 }
+
